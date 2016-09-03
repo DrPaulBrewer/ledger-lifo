@@ -7,9 +7,9 @@ module.exports = LedgerLIFO;
 LedgerLIFO.prototype.transfer = function(params){
     const f=params.f, t=params.t;
     const facct = this.accounts[f];
-    var v = params.v;
+    var v = +params.v;
     var lot;
-    if (f && t && v){
+    if (f && t && (v>0)){
 	const props = Object.assign({}, params);
 	delete props.f;
 	delete props.t;
