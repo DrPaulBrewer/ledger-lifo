@@ -13,10 +13,10 @@ Trivial Last In First Out (LIFO) tracker with transfer function.
      // it is up to the developer to choose properties to track, give them meaning, and decide when to override a property
      myLIFO.transfer({f:acct1, t:acct2, v:100, unitcost:3});
      myLIFO.transfer({f:acct1, t:acct2, v:300, unitcost:5});
-     // myLIFO[acct2] === [{v:300, unitcost:5}, {v:100, unitcost:3}]
+     // myLIFO.accounts[acct2] === [{v:300, unitcost:5}, {v:100, unitcost:3}]
      myLIFO.transfer({f:acct2, t:acct3, v:350});
-     // myLIFO[acct2] === [{v:50, unitcost:3}]
-     // myLIFO[acct3] === [{v:50, unitcost:3}, {v:300, unitcost:5}]
+     // myLIFO.accounts[acct2] === [{v:50, unitcost:3}]
+     // myLIFO.accounts[acct3] === [{v:50, unitcost:3}, {v:300, unitcost:5}]
 
 ## Copyright and License
 
