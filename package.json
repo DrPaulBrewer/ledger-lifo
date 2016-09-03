@@ -1,6 +1,6 @@
 {
   "name": "ledger-lifo",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Last-In First-Out feature tracking Ledger",
   "main": "index.js",
   "scripts": {
